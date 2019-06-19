@@ -7,7 +7,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-u', '--url', type=str, required=True)
 parser.add_argument('-r', '--referer', type=str, required=True)
-parser.add_argument('-w', '--wordlist', type=str, required=True)
+parser.add_argument('-w', '--wordlist', type=list, required=True)
 args = parser.parse_args()
 
 wl = open(args.wordlist)
