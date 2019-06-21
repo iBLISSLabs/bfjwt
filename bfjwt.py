@@ -19,8 +19,7 @@ for secret in wl:
     r = requests.post(burp0_url, headers=burp0_headers)
     print('{s} > {r}'.format(s=secret,r=r.status_code))
     if r.status_code == 200:
-        print('\nSECRET FOUND')
-        print('')
+        print('\nSECRET FOUND\n')
         print('Token JWT: {t}'.format(t=tkn))
         exit(0)
 
